@@ -1,0 +1,20 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import { Button } from './button.component.ts';
+import * as stories from './Button.stories.ts';
+import {moduleMetadata} from "@storybook/angular";
+import {ClarityModule} from "@clr/angular";
+
+<Meta title="Demo/Button" component={Button}
+decorators={[    moduleMetadata({
+                   imports: [ClarityModule],
+                 })
+                 ]}/>
+
+# Primary Button
+
+Here is some custom mark down describing the Primary button
+<Canvas>
+  <Story story={stories.Primary} />
+</Canvas>
+
+
